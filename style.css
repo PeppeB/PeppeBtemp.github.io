@@ -1,0 +1,34 @@
+:root, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    /* il contenuto non eccede i bordi della card */
+    overflow: hidden;
+}
+
+.card .card-header {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card .card-header img {
+    object-fit: cover;
+    min-height: 200px;
+    max-width: 100%;
+}
+
+.card .card-content {
+    padding: 10%;
+}
